@@ -1,4 +1,4 @@
-package com.example.infs3605_group_project;
+package com.example.infs3605_group_project.entities;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

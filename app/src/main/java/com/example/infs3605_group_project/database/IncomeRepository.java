@@ -1,9 +1,13 @@
-package com.example.infs3605_group_project;
+package com.example.infs3605_group_project.database;
 
 import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
+
+import com.example.infs3605_group_project.database.IncomeDao;
+import com.example.infs3605_group_project.database.IncomeDatabase;
+import com.example.infs3605_group_project.entities.Income;
 
 import java.util.List;
 

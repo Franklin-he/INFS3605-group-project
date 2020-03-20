@@ -1,4 +1,4 @@
-package com.example.infs3605_group_project;
+package com.example.infs3605_group_project.database;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -6,6 +6,8 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.example.infs3605_group_project.entities.Income;
 
 import java.util.List;
 

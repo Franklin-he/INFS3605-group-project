@@ -1,4 +1,4 @@
-package com.example.infs3605_group_project;
+package com.example.infs3605_group_project.database;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -8,6 +8,8 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
+
+import com.example.infs3605_group_project.entities.Income;
 
 @Database(entities = Income.class, version = 1)
 public abstract class IncomeDatabase extends RoomDatabase {

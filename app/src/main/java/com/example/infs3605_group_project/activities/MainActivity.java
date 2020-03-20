@@ -1,8 +1,7 @@
-package com.example.infs3605_group_project;
+package com.example.infs3605_group_project.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.content.Intent;
@@ -11,12 +10,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.infs3605_group_project.IncomeViewModel;
+import com.example.infs3605_group_project.R;
+import com.example.infs3605_group_project.entities.Income;
+
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private IncomeViewModel incomeViewModel;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button button = findViewById(R.id.incomeNext);
+        Button button = findViewById(R.id.income_calculate);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void toSpending(){
         Intent i = new Intent(this, Spending.class);
-        EditText incomeInput = (EditText) findViewById(R.id.income);
+        EditText incomeInput = (EditText) findViewById(R.id.income_amount);
         Double income = Double.valueOf(incomeInput.getText().toString());
         i.putExtra("income", income);
         startActivity(i);

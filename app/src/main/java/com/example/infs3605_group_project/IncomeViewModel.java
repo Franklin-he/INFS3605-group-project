@@ -6,6 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
+import com.example.infs3605_group_project.database.IncomeRepository;
+import com.example.infs3605_group_project.entities.Income;
+
 import java.util.List;
 
 public class IncomeViewModel extends AndroidViewModel {
