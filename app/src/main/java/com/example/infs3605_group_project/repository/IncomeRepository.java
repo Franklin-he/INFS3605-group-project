@@ -1,17 +1,18 @@
-package com.example.infs3605_group_project.database;
+package com.example.infs3605_group_project.repository;
 
 import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
 
+import com.example.infs3605_group_project.database.Income;
 import com.example.infs3605_group_project.database.IncomeDao;
 import com.example.infs3605_group_project.database.IncomeDatabase;
-import com.example.infs3605_group_project.entities.Income;
 
 import java.util.List;
 
 public class IncomeRepository {
+
     private IncomeDao incomeDao;
     private LiveData<List<Income>> allIncomes;
 
@@ -21,19 +22,19 @@ public class IncomeRepository {
         allIncomes = incomeDao.getAllIncomes();
     }
 
-    public void insert(Income income){
+    public void insert(Income income) {
         new InsertIncomeAsyncTask(incomeDao).execute(income);
     }
 
-    public void update(Income income){
+    public void update(Income income) {
         new UpdateIncomeAsyncTask(incomeDao).execute(income);
     }
 
-    public void delete(Income income){
+    public void delete(Income income) {
         new DeleteIncomeAsyncTask(incomeDao).execute(income);
     }
 
-    public void deleteAllNotes(){
+    public void deleteAllIncomes() {
         new DeleteAllIncomesAsyncTask(incomeDao).execute();
     }
 
@@ -44,7 +45,7 @@ public class IncomeRepository {
     private static class InsertIncomeAsyncTask extends AsyncTask<Income, Void, Void> {
         private IncomeDao incomeDao;
 
-        private InsertIncomeAsyncTask(IncomeDao incomeDao){
+        private InsertIncomeAsyncTask(IncomeDao incomeDao) {
             this.incomeDao = incomeDao;
         }
         @Override
@@ -57,7 +58,7 @@ public class IncomeRepository {
     private static class UpdateIncomeAsyncTask extends AsyncTask<Income, Void, Void> {
         private IncomeDao incomeDao;
 
-        private UpdateIncomeAsyncTask(IncomeDao incomeDao){
+        private UpdateIncomeAsyncTask(IncomeDao incomeDao) {
             this.incomeDao = incomeDao;
         }
         @Override
@@ -70,7 +71,7 @@ public class IncomeRepository {
     private static class DeleteIncomeAsyncTask extends AsyncTask<Income, Void, Void> {
         private IncomeDao incomeDao;
 
-        private DeleteIncomeAsyncTask(IncomeDao incomeDao){
+        private DeleteIncomeAsyncTask(IncomeDao incomeDao) {
             this.incomeDao = incomeDao;
         }
         @Override
@@ -83,7 +84,7 @@ public class IncomeRepository {
     private static class DeleteAllIncomesAsyncTask extends AsyncTask<Void, Void, Void> {
         private IncomeDao incomeDao;
 
-        private DeleteAllIncomesAsyncTask(IncomeDao incomeDao){
+        private DeleteAllIncomesAsyncTask(IncomeDao incomeDao) {
             this.incomeDao = incomeDao;
         }
         @Override

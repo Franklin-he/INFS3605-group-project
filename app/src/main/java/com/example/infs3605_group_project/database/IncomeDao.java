@@ -7,8 +7,6 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.infs3605_group_project.entities.Income;
-
 import java.util.List;
 
 @Dao
@@ -28,4 +26,7 @@ public interface IncomeDao {
 
     @Query("SELECT * FROM income_table")
     LiveData<List<Income>> getAllIncomes();
+
+    @Query("SELECT * FROM income_table WHERE id = :id")
+    Income findByIncomeId(int id);
 }

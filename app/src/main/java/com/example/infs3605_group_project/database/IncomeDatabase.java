@@ -9,15 +9,14 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-import com.example.infs3605_group_project.entities.Income;
-
-@Database(entities = Income.class, version = 1)
+@Database(entities = Income.class, version = 2, exportSchema = false)
 public abstract class IncomeDatabase extends RoomDatabase {
 
     private static IncomeDatabase instance;
 
     public abstract IncomeDao incomeDao();
 
+    //creates an incomeDB instance
     public static synchronized IncomeDatabase getInstance(Context context){
         if(instance == null){
             instance = Room.databaseBuilder(context.getApplicationContext(),
@@ -29,6 +28,7 @@ public abstract class IncomeDatabase extends RoomDatabase {
         return instance;
     }
 
+    //manual insert into DB for testing
     private static RoomDatabase.Callback roomCallBack = new RoomDatabase.Callback() {
         @Override
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
@@ -45,8 +45,8 @@ public abstract class IncomeDatabase extends RoomDatabase {
         }
         @Override
         protected Void doInBackground(Void... voids) {
-            incomeDao.insert(new Income("job", Long.parseLong("2000")));
-            incomeDao.insert(new Income("tutoring", Long.parseLong("500")));
+            //incomeDao.insert(new Income("job", Long.parseLong("2000")));
+            //incomeDao.insert(new Income("tutoring", Long.parseLong("500")));
             return null;
         }
     }
