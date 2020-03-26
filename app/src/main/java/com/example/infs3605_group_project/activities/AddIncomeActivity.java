@@ -2,6 +2,7 @@ package com.example.infs3605_group_project.activities;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -46,6 +47,13 @@ public class AddIncomeActivity extends AppCompatActivity {
         total_income = findViewById(R.id.total_income);
         total_savings = findViewById(R.id.total_savings);
         total_spendable = findViewById(R.id.total_spendable);
+
+        SharedPreferences sharedPreferences = getSharedPreferences("incomes", MODE_PRIVATE);
+        Long t_income = sharedPreferences.getLong("total_income", 0);
+        Long t_savings = sharedPreferences.getLong("total_savings", 0);
+
+        editTotalIncome.setText(t_income.toString());
+        editSavingsRate.setText(t_savings.toString());
 
         //incomeRepository = new IncomeRepository(getApplication());
         //getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
@@ -101,6 +109,15 @@ public class AddIncomeActivity extends AppCompatActivity {
     public void saveIncome() {
         SharedPreferences sharedPreferences = getSharedPreferences("incomes", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        if (TextUtils.isEmpty(editTotalIncome.getText().toString())) {
+            editTotalIncome.setError("Your total income cannot be empty");
+            return;
+        }
+        if (TextUtils.isEmpty(editSavingsRate.getText().toString())) {
+            editSavingsRate.setError("Your total income cannot be empty");
+            return;
+        }
 
         Long monthly_total_income = Long.parseLong(editTotalIncome.getText().toString());
         Long savings_rate = Long.valueOf(editSavingsRate.getText().toString());
