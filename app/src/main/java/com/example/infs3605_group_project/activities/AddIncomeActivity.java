@@ -50,10 +50,10 @@ public class AddIncomeActivity extends AppCompatActivity {
 
         SharedPreferences sharedPreferences = getSharedPreferences("incomes", MODE_PRIVATE);
         Long t_income = sharedPreferences.getLong("total_income", 0);
-        Long t_savings = sharedPreferences.getLong("total_savings", 0);
+        Long savings_rate = sharedPreferences.getLong("savings_rate", 0);
 
         editTotalIncome.setText(t_income.toString());
-        editSavingsRate.setText(t_savings.toString());
+        editSavingsRate.setText(savings_rate.toString());
 
         //incomeRepository = new IncomeRepository(getApplication());
         //getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
@@ -115,7 +115,7 @@ public class AddIncomeActivity extends AppCompatActivity {
             return;
         }
         if (TextUtils.isEmpty(editSavingsRate.getText().toString())) {
-            editSavingsRate.setError("Your total income cannot be empty");
+            editSavingsRate.setError("Your desired savings rate cannot be empty");
             return;
         }
 
@@ -131,6 +131,7 @@ public class AddIncomeActivity extends AppCompatActivity {
             return;
         }
         editor.putLong("total_income", monthly_total_income);
+        editor.putLong("savings_rate", savings_rate);
         editor.putLong("total_savings", monthly_total_saving);
         editor.putLong("total_spendables", monthly_spendable_income);
 
