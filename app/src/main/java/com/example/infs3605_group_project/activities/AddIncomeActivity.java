@@ -44,16 +44,16 @@ public class AddIncomeActivity extends AppCompatActivity {
         editTotalIncome = findViewById(R.id.income_amount);
         editSavingsRate = findViewById(R.id.income_saving);
 
-        total_income = findViewById(R.id.total_income);
-        total_savings = findViewById(R.id.total_savings);
-        total_spendable = findViewById(R.id.total_spendable);
+        //total_income = findViewById(R.id.total_income);
+        //total_savings = findViewById(R.id.total_savings);
+        //total_spendable = findViewById(R.id.total_spendable);
 
         SharedPreferences sharedPreferences = getSharedPreferences("incomes", MODE_PRIVATE);
         Long t_income = sharedPreferences.getLong("total_income", 0);
         Long savings_rate = sharedPreferences.getLong("savings_rate", 0);
 
-        editTotalIncome.setText(t_income.toString());
-        editSavingsRate.setText(savings_rate.toString());
+        //editTotalIncome.setText(t_income.toString());
+        //editSavingsRate.setText(savings_rate.toString());
 
         //incomeRepository = new IncomeRepository(getApplication());
         //getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
@@ -65,10 +65,16 @@ public class AddIncomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 saveIncome();
+                SharedPreferences sharedPreferences = getSharedPreferences("incomes", MODE_PRIVATE);
+                Long t_spendable = sharedPreferences.getLong("total_spendables", 0);
+                Intent intent = new Intent(AddIncomeActivity.this, AddSpendingActivity.class);
+                intent.putExtra("total_spendable", t_spendable);
+                AddIncomeActivity.this.startActivity(intent);
             }
 
         });
 
+        /*
         Button show_income = findViewById(R.id.income_show);
         //show values
         show_income.setOnClickListener(new View.OnClickListener() {
@@ -84,7 +90,7 @@ public class AddIncomeActivity extends AppCompatActivity {
                 total_spendable.setText(t_spendable.toString());
             }
 
-        });
+        });*/
 
 
     }
