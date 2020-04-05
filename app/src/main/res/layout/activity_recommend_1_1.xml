@@ -24,7 +24,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="33dp"
-        android:layout_marginBottom="448dp"
+        android:layout_marginBottom="447dp"
         android:text="Let us help you find an investment strategy suitable for you, so that you can watch your savings grow. Take the quiz below to find out what type of investor you are!"
         android:textSize="16sp" />
 

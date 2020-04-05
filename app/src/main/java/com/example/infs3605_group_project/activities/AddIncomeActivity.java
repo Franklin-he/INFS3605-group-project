@@ -64,8 +64,37 @@ public class AddIncomeActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                saveIncome();
                 SharedPreferences sharedPreferences = getSharedPreferences("incomes", MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+
+                if (TextUtils.isEmpty(editTotalIncome.getText().toString())) {
+                    editTotalIncome.setError("Your total income cannot be empty");
+                    return;
+                }
+                if (TextUtils.isEmpty(editSavingsRate.getText().toString())) {
+                    editSavingsRate.setError("Your desired savings rate cannot be empty");
+                    return;
+                }
+
+                Long monthly_total_income = Long.parseLong(editTotalIncome.getText().toString());
+                Long savings_rate = Long.valueOf(editSavingsRate.getText().toString());
+
+                Long monthly_total_saving = ((monthly_total_income * savings_rate)/100);
+
+                Long monthly_spendable_income = (monthly_total_income - monthly_total_saving);
+
+                if (monthly_total_income == null || savings_rate == null) {
+                    Toast.makeText(getApplicationContext(), "Total income and desired savings rate cannot be empty. ", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                editor.putLong("total_income", monthly_total_income);
+                editor.putLong("savings_rate", savings_rate);
+                editor.putLong("total_savings", monthly_total_saving);
+                editor.putLong("total_spendables", monthly_spendable_income);
+
+                editor.apply();
+
+                Toast.makeText(getApplicationContext(), "Data saved", Toast.LENGTH_SHORT).show();
                 Long t_spendable = sharedPreferences.getLong("total_spendables", 0);
                 Intent intent = new Intent(AddIncomeActivity.this, AddSpendingActivity.class);
                 intent.putExtra("total_spendable", t_spendable);
@@ -94,57 +123,5 @@ public class AddIncomeActivity extends AppCompatActivity {
 
 
     }
-
-    /*public void saveIncome() {
-
-        Long total_income = Long.valueOf(editTotalIncome.getText().toString());
-        Long savings_rate = Long.valueOf(editSavingsRate.getText().toString());
-
-        if (total_income == null || savings_rate == null) {
-            Toast.makeText(this, "Description and amount cannot be empty. ", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        Long monthly_total_saving = total_income * (savings_rate/100);
-        Long monthly_spendable_income = total_income - monthly_total_saving;
-
-        Income income = new Income(total_income, monthly_total_saving, monthly_spendable_income);
-        incomeRepository.insert(income);
-    }*/
-
-    public void saveIncome() {
-        SharedPreferences sharedPreferences = getSharedPreferences("incomes", MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-
-        if (TextUtils.isEmpty(editTotalIncome.getText().toString())) {
-            editTotalIncome.setError("Your total income cannot be empty");
-            return;
-        }
-        if (TextUtils.isEmpty(editSavingsRate.getText().toString())) {
-            editSavingsRate.setError("Your desired savings rate cannot be empty");
-            return;
-        }
-
-        Long monthly_total_income = Long.parseLong(editTotalIncome.getText().toString());
-        Long savings_rate = Long.valueOf(editSavingsRate.getText().toString());
-
-        Long monthly_total_saving = ((monthly_total_income * savings_rate)/100);
-
-        Long monthly_spendable_income = (monthly_total_income - monthly_total_saving);
-
-        if (monthly_total_income == null || savings_rate == null) {
-            Toast.makeText(this, "Total income and desired savings rate cannot be empty. ", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        editor.putLong("total_income", monthly_total_income);
-        editor.putLong("savings_rate", savings_rate);
-        editor.putLong("total_savings", monthly_total_saving);
-        editor.putLong("total_spendables", monthly_spendable_income);
-
-        editor.apply();
-
-        Toast.makeText(this, "Data saved", Toast.LENGTH_SHORT).show();
-    }
-
 
 }
