@@ -36,13 +36,33 @@ public class AddSpendingActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spending);
+        SharedPreferences spendings = getSharedPreferences("spendings", MODE_PRIVATE);
 
         groceries_amount = findViewById(R.id.groceries_amount);
+        Long g_amount = spendings.getLong("groceries_amount_sp",0);
+        groceries_amount.setText(g_amount.toString());
+
         shopping_amount = findViewById(R.id.shopping_amount);
+        Long s_amount = spendings.getLong("shopping_amount_sp",0);
+        shopping_amount.setText(s_amount.toString());
+
         entertainment_amount = findViewById(R.id.entertainment_amount);
+        Long e_amount = spendings.getLong("entertainment_amount_sp",0);
+        entertainment_amount.setText(e_amount.toString());
+
         utilities_amount = findViewById(R.id.utilities_amount);
+        Long u_amount = spendings.getLong("utilities_amount_sp",0);
+        utilities_amount.setText(u_amount.toString());
+
         transport_amount = findViewById(R.id.transport_amount);
+        Long t_amount = spendings.getLong("transport_amount_sp",0);
+        transport_amount.setText(t_amount.toString());
+
         other_amount = findViewById(R.id.other_amount);
+        Long o_amount = spendings.getLong("other_amount_sp",0);
+        other_amount.setText(o_amount.toString());
+
+
 
         TextView t_spendable = findViewById(R.id.total_spendable2);
 
@@ -117,7 +137,7 @@ public class AddSpendingActivity extends AppCompatActivity {
 
                 } else if (monthly_total_spending < t_spendable) {
                     //pop up msg
-                    Toast toast = Toast.makeText(getApplicationContext(), "You spend $" + (t_spendable - monthly_total_spending) + " less in a month than you have planned, this amount is added to your spendable income. ", Toast.LENGTH_LONG);
+                    Toast toast = Toast.makeText(getApplicationContext(), "You spend $" + (t_spendable - monthly_total_spending) + " less in a month than you have planned, this amount is added to your savings. ", Toast.LENGTH_LONG);
                     LinearLayout toastLayout = (LinearLayout) toast.getView();
                     TextView toastTV = (TextView) toastLayout.getChildAt(0);
                     toastTV.setTextSize(30);
