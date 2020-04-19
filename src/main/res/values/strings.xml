@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">INFS3605_group_project</string>
+    <string name="spending_morethan_savings">You spend more in a month than you have planned, cut back on your lifestyle or reduce your savings rate and risk retiring later than anticipated!</string>
+    <string name="spending_lessthan_savings">You spend less in a month than you have planned, you should go back and increase your savings rate to maximise your future income.</string>
+
+</resources>
