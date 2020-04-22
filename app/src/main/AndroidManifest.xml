@@ -24,6 +24,8 @@
         <activity android:name=".activities.ShowRecommendInvestment"></activity>
         <activity android:name=".activities.GeneralInfo"></activity>
         <activity android:name=".activities.CreateUser"></activity>
+        <activity android:name=".activities.BondsLineChart"></activity>
+        <activity android:name=".activities.ETFsLineChart"></activity>
     </application>
 
 </manifest>
