@@ -52,10 +52,10 @@ public class AddIncomeActivity extends AppCompatActivity {
         Long t_income = sharedPreferences.getLong("total_income", 0);
         Long savings_rate = sharedPreferences.getLong("savings_rate", 0);
 
-        //editTotalIncome.setText(t_income.toString());
-        //editSavingsRate.setText(savings_rate.toString());
+        editTotalIncome.setText(t_income.toString());
+        editSavingsRate.setText(savings_rate.toString());
 
-        //incomeRepository = new IncomeRepository(getApplication());
+        incomeRepository = new IncomeRepository(getApplication());
         //getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_close);
         setTitle("Add Income");
 

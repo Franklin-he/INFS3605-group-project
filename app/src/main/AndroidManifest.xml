@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.GeneralInfo">
+        <activity android:name=".activities.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,6 +22,8 @@
         <activity android:name=".activities.MainActivity"></activity>
         <activity android:name=".activities.AddSpendingActivity"></activity>
         <activity android:name=".activities.ShowRecommendInvestment"></activity>
+        <activity android:name=".activities.GeneralInfo"></activity>
+        <activity android:name=".activities.CreateUser"></activity>
     </application>
 
 </manifest>
