@@ -47,5 +47,16 @@ public class ShowRecommendInvestment extends AppCompatActivity {
             }
 
         });
+
+        Button quizButton = findViewById(R.id.Quiz);
+
+        quizButton.setOnClickListener(new View.OnClickListener()  {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ShowRecommendInvestment.this, personalityquiz.class);
+                ShowRecommendInvestment.this.startActivity(intent);
+            }
+
+        });
     }
 }
