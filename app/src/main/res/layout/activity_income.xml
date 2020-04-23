@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2D9D4D"
@@ -18,148 +19,165 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="326dp"
-        android:layout_height="72dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="510dp"
+        android:layout_width="335dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="61dp"
         android:text="Enter your total income: "
         android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/income_desc"
-        android:layout_width="135dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="191dp"
-        android:layout_marginBottom="462dp"
-        android:ems="10"
-        android:inputType="text"
-        android:padding="8dp"
-        android:text="Total income : "
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
 
     <EditText
         android:id="@+id/income_amount"
         android:layout_width="122dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="465dp"
         android:ems="10"
         android:hint="Amount"
         android:inputType="number"
-        android:padding="8dp" />
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <TextView
+        android:id="@+id/income_desc"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Total income : "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476" />
 
     <Button
         android:id="@+id/income_add"
         android:layout_width="178dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="126dp"
-        android:layout_marginEnd="124dp"
-        android:layout_marginBottom="122dp"
-        android:layout_weight="1"
-        android:background="@drawable/rounded_button"
-        android:padding="8dp"
-        android:text="Next"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/income_desc2"
-        android:layout_width="132dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="191dp"
-        android:layout_marginBottom="214dp"
-        android:ems="10"
-        android:inputType="text"
-        android:padding="8dp"
-        android:text="Savings rate :"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="75dp"
-        android:layout_marginBottom="280dp"
-        android:text="Enter a savings rate:"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/income_saving"
-        android:layout_width="107dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="92dp"
-        android:layout_marginBottom="215dp"
-        android:ems="10"
-        android:hint="%"
-        android:inputType="number"
-        android:padding="8dp" />
-
-    <Button
-        android:id="@+id/income_next"
-        android:layout_width="179dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="124dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="371dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="134dp"
         android:layout_weight="1"
         android:background="@drawable/rounded_button"
         android:padding="8dp"
         android:text="Add"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginEnd="65dp"
+        android:text="Enter a savings rate:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691" />
+
+    <EditText
+        android:id="@+id/income_saving"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="168dp"
+        android:ems="10"
+        android:hint="%"
+        android:inputType="number"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/income_next"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="88dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_button"
+        android:padding="8dp"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/income_desc2"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="168dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Savings rate :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="62dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:layout_width="440dp"
+        android:layout_height="48dp"
         android:layout_marginStart="119dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="628dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="682dp"
+        android:gravity="center"
         android:text="My Savings"
         android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="39dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="292dp"
-        android:layout_marginBottom="643dp"
-        android:src="@drawable/back" />
+        android:id="@+id/imageView9"
+        android:layout_width="150dp"
+        android:layout_height="84dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/whiteRoundedView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/whiteRoundedView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847"
+        app:srcCompat="@drawable/savmoney" />
 
     <!--
     <Button
@@ -237,4 +255,4 @@
         android:text="test"/>-->
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
