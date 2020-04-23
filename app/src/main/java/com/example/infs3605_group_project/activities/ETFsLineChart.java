@@ -52,6 +52,7 @@ public class ETFsLineChart extends AppCompatActivity{
         set1.setFillAlpha(2000);
         set1.setLineWidth(2f);
         set1.setValueTextSize(10f);
+        set1.setValueFormatter(new MyValueFormatter());
 
 
         ArrayList<ILineDataSet> dataSets = new ArrayList<>();
@@ -68,5 +69,11 @@ public class ETFsLineChart extends AppCompatActivity{
 
         lChart.getXAxis().setValueFormatter(new com.github.mikephil.charting.formatter.IndexAxisValueFormatter(years));
         xAxis.setGranularity(1);
+    }
+    public class MyValueFormatter extends ValueFormatter {
+        @Override
+        public String getFormattedValue(float value) {
+            return "$" + super.getFormattedValue(value);
+        }
     }
 }
