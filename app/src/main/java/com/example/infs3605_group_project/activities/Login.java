@@ -55,7 +55,7 @@ public class Login extends AppCompatActivity {
                         intent.putExtra("user", thisuser);
                         context.startActivity(intent);
                     } else  {
-                        Toast.makeText(getApplicationContext(), "Incorrect usename or password.",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Incorrect username or password.",Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
