@@ -19,6 +19,11 @@ android {
     }
 }
 
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+
 dependencies {
     def lifecycle_version = "2.2.0"
     def arch_version = "2.1.0"
@@ -33,6 +38,7 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
