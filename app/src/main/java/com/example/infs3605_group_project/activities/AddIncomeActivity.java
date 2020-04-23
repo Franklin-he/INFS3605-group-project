@@ -27,7 +27,7 @@ public class AddIncomeActivity extends AppCompatActivity {
     public static final String EXTRA_AMOUNT = "com.example.infs3605_group_project.R.EXTRA_AMOUNT";
     public static final int ADD_INCOME_REQUEST = 1;
 
-
+//
     private EditText editTotalIncome;
     private EditText editSavingsRate;
     private IncomeRepository incomeRepository;
