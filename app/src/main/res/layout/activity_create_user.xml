@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.CreateUser"
-    >
+    android:background="#2D9D4D"
+    tools:context=".activities.CreateUser">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:text="Older you will thank you for joining us!"
-        android:textSize="30dp"
-        android:textStyle="bold"
+    <View
+        android:id="@+id/whiteRoundedView"
+        android:layout_width="411dp"
+        android:layout_height="635dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/round_rect_shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,10 +21,9 @@
         android:id="@+id/tablelayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title">
+        tools:layout_editor_absoluteY="347dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -36,7 +33,10 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Username:"
+                android:text="Email:"
+                android:textColor="#2D9D4D"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="69dp"
                 tools:layout_editor_absoluteY="272dp" />
 
@@ -58,6 +58,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Password:"
+                android:textColor="#2D9D4D"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="69dp"
                 tools:layout_editor_absoluteY="347dp" />
 
@@ -79,7 +82,11 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"
         android:text="Create"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tablelayout1" />
@@ -89,10 +96,80 @@
 
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_button"
         android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/create_button" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="265dp"
+        android:layout_height="47dp"
+        android:text="Create Account"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="43dp"
+        android:layout_height="41dp"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank us when you're older"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/whiteRoundedView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="222dp"
+        android:layout_height="124dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/whiteRoundedView"
+        app:layout_constraintEnd_toStartOf="@+id/whiteRoundedView"
+        app:layout_constraintStart_toEndOf="@+id/whiteRoundedView"
+        app:layout_constraintTop_toBottomOf="@+id/whiteRoundedView"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="62dp"
+        android:layout_height="42dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toTopOf="@+id/whiteRoundedView"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

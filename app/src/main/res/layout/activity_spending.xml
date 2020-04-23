@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2D9D4D"
     tools:context=".activities.Spending">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+
+    <View
+        android:id="@+id/whiteRoundedView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="71dp"
-        android:layout_marginBottom="562dp"
-        android:text="My spendable income: "
-        android:textSize="25dp" />
+        android:layout_marginTop="136dp"
+        android:background="@drawable/round_rect_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/total_spendable2"
@@ -23,11 +23,41 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="138dp"
-        android:layout_marginBottom="500dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="603dp"
         android:ems="10"
         android:padding="8dp"
-        android:textSize="24dp"/>
+        android:text="$0000"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="665dp"
+        android:text="My Spendable Income"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="76dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="339dp"
+        android:layout_marginBottom="664dp"
+        android:src="@drawable/back" />
 
     <TextView
         android:id="@+id/textView_spending"
@@ -35,36 +65,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="406dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="488dp"
         android:text="Distribute your income into spendable categories: "
+        android:textColor="?android:attr/colorPrimaryDark"
         android:textSize="22dp" />
-
-    <EditText
-        android:id="@+id/groceries"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="215dp"
-        android:layout_marginBottom="341dp"
-        android:ems="10"
-        android:text="Groceries: "
-        android:inputType="text"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/groceries_amount"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="341dp"
-        android:ems="10"
-        android:hint="Amount"
-        android:inputType="number"
-        android:padding="8dp" />
 
     <EditText
         android:id="@+id/shopping"
@@ -72,11 +77,97 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="215dp"
-        android:layout_marginBottom="301dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="350dp"
         android:ems="10"
-        android:text="Shopping: "
         android:inputType="text"
+        android:padding="8dp"
+        android:text="Shopping: "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/groceries"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="232dp"
+        android:layout_marginBottom="403dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Groceries: "
+        android:textAllCaps="false"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/entertainment"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="203dp"
+        android:layout_marginBottom="298dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Entertainment: "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/utilities"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="246dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Utilities: "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/transport"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="194dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Transport: "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/other"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="232dp"
+        android:layout_marginBottom="141dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Other: "
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/other_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="144dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number"
         android:padding="8dp" />
 
     <EditText
@@ -85,24 +176,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="301dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="353dp"
         android:ems="10"
         android:hint="Amount"
         android:inputType="number"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/entertainment"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="215dp"
-        android:layout_marginBottom="261dp"
-        android:ems="10"
-        android:text="Entertainment: "
-        android:inputType="text"
         android:padding="8dp" />
 
     <EditText
@@ -111,24 +189,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="261dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="299dp"
         android:ems="10"
         android:hint="Amount"
         android:inputType="number"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/utilities"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="215dp"
-        android:layout_marginBottom="221dp"
-        android:ems="10"
-        android:text="Utilities: "
-        android:inputType="text"
         android:padding="8dp" />
 
     <EditText
@@ -137,24 +202,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="221dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="243dp"
         android:ems="10"
         android:hint="Amount"
         android:inputType="number"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/transport"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="215dp"
-        android:layout_marginBottom="181dp"
-        android:ems="10"
-        android:text="Transport: "
-        android:inputType="text"
         android:padding="8dp" />
 
     <EditText
@@ -163,52 +215,42 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="181dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="195dp"
         android:ems="10"
         android:hint="Amount"
         android:inputType="number"
         android:padding="8dp" />
 
     <EditText
-        android:id="@+id/other"
+        android:id="@+id/groceries_amount"
         android:layout_width="122dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="215dp"
-        android:layout_marginBottom="141dp"
-        android:ems="10"
-        android:text="Other: "
-        android:inputType="text"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/other_amount"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="141dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="403dp"
         android:ems="10"
         android:hint="Amount"
         android:inputType="number"
         android:padding="8dp" />
-
 
     <Button
         android:id="@+id/spending_next"
-        android:layout_width="wrap_content"
+        android:layout_width="104dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="158dp"
-        android:layout_marginEnd="159dp"
+        android:layout_marginEnd="149dp"
         android:layout_marginBottom="68dp"
         android:layout_weight="1"
+        android:background="@drawable/rounded_button"
         android:padding="8dp"
-        android:text="Continue" />
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

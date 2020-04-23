@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/INFS3605_group_project.iml" filepath="$PROJECT_DIR$/INFS3605_group_project.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/INFS3605_group_project.iml" filepath="$PROJECT_DIR$/INFS3605_group_project.iml" group="INFS3605_group_project" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="INFS3605_group_project/app" />
     </modules>
   </component>
 </project>
