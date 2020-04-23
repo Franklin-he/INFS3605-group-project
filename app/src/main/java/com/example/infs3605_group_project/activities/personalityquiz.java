@@ -47,7 +47,7 @@ public class personalityquiz extends AppCompatActivity {
         TextView title = findViewById(R.id.title);
         title.setText("Question "+1);
 
-        final double[] risk_score = {0};
+        final double[] risk_score = {12};
 
         TextView option1 = findViewById(R.id.btnOption1);
         TextView option2 = findViewById(R.id.btnOption2);
@@ -64,7 +64,7 @@ public class personalityquiz extends AppCompatActivity {
                 if(counter[0]<12 && counter[0]!=9)
                 {
                     loadNewQuestion(counter[0]);
-                    risk_score[0] = risk_score[0] + 3;
+                    risk_score[0] = risk_score[0] + 2;
                 } else if(counter[0]==9){
                     counter[0]++;
                 }
@@ -87,7 +87,7 @@ public class personalityquiz extends AppCompatActivity {
                 if(counter[0]<12 && counter[0]!=9)
                 {
                     loadNewQuestion(counter[0]);
-                    risk_score[0] = risk_score[0] + 1.5;
+                    risk_score[0] = risk_score[0] + 1;
                 } else if(counter[0]==9){
                     counter[0]++;
                 }
@@ -132,7 +132,7 @@ public class personalityquiz extends AppCompatActivity {
                 if(counter[0]<12 && counter[0]!=9)
                 {
                     loadNewQuestion(counter[0]);
-                    risk_score[0] = risk_score[0] + 1.5;
+                    risk_score[0] = risk_score[0] - 1;
                 } else if(counter[0]==9){
                     counter[0]++;
                 }
@@ -155,7 +155,7 @@ public class personalityquiz extends AppCompatActivity {
                 if(counter[0]<12 && counter[0]!=9)
                 {
                     loadNewQuestion(counter[0]);
-                    risk_score[0] = risk_score[0] + 3;
+                    risk_score[0] = risk_score[0] - 2;
                 } else if(counter[0]==9){
                     counter[0]++;
                 }

@@ -24,16 +24,16 @@ public class ResultQuiz extends AppCompatActivity {
         tvScore.setText("Score "+ risk_rating);
         Button btnInvestment = findViewById(R.id.btnInvestment);
         TextView tvInvestment = findViewById(R.id.tvInvestment);
-        if(risk_rating<12)
+        if(risk_rating<7)
         {
-            tvInvestment.setText( "We have determined that a high risk, high return strategy is optimal for your investments in ETFs");
-            btnInvestment.setText("ETF");
-        }else if(risk_rating>20){
+            tvInvestment.setText( "We have determined that a low risk, low return strategy is optimal for your investments in Bonds");
+            btnInvestment.setText("Bonds");
+        }else if(risk_rating>18){
             tvInvestment.setText( "We have determined that a high risk, high return strategy is optimal for your investments in Stocks");
             btnInvestment.setText("Stocks");
         }else{
-            tvInvestment.setText( "We have determined that a high risk, high return strategy is optimal for your investments in Bonds");
-            btnInvestment.setText("Bonds");
+            tvInvestment.setText( "We have determined that a moderate risk, moderate return strategy is optimal for your investments in ETFs");
+            btnInvestment.setText("ETFs");
 
         }
 
