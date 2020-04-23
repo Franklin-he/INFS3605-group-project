@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Spending">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="565dp"
+        android:text="Here's a list of recommended investment options for you: "
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/funds"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="423dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:text="Managed funds" />
+
+    <Button
+        android:id="@+id/shares"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="303dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:text="Shares" />
+
+    <Button
+        android:id="@+id/bonds"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="183dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:text="Bonds" />
+
+</RelativeLayout>

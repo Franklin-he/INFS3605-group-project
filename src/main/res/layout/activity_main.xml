@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activities.Spending">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="135dp"
+        android:layout_height="256dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="126dp"
+        app:srcCompat="@drawable/invexlogo" />
+
+    <TextView
+        android:id="@+id/titleFront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="63dp"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:text="INVEX"
+        android:textStyle="bold"
+        android:textColor="#4BB1A7"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/mottoFront"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="67dp"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:text="Save   Learn   Grow"
+        android:textStyle="bold"
+        android:textColor="#55C264"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="197dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:text="BEGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

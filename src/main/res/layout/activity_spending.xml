@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#48A287"
+    tools:context=".activities.Spending">
+
+    <TextView
+        android:id="@+id/textView_spending"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="433dp"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:text="Distribute your income into spendable categories: "
+        android:textColor="#FFFFFF"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/total_spendable2"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="530dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/groceries"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="344dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Groceries: "
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/groceries_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="344dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:hint="Enter here"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/shopping"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="304dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Shopping: "
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/shopping_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="304dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:hint="Enter here"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/entertainment"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="264dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Entertainment: "
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/entertainment_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="264dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:hint="Enter here"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/utilities"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="224dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Utilities: "
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/utilities_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="224dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:hint="Enter here"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/transport"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="184dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Transport: "
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/transport_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="184dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:hint="Enter here"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/other"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="144dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Other: "
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/other_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="144dp"
+        android:ems="10"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:hint="Enter here"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
+
+    <Button
+        android:id="@+id/spending_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="260dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="48dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:padding="8dp"
+        android:text="Continue"
+        android:textColor="#48A287" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="532dp"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:text="My Spendable Income: "
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>
