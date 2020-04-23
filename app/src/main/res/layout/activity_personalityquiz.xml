@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#64CA77"
+    android:background="#64CA77"
+    tools:context=".activities.personalityquiz">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:gravity="center"
+        android:text="Question"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/whiteRoundedView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/whiteRoundedView"
+        android:layout_width="match_parent"
+        android:layout_height="684dp"
+        android:layout_marginTop="136dp"
+        android:gravity="center"
+        android:background="@drawable/whiteroundedbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="293dp"
+        android:layout_height="108dp"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:text="Question"
+        android:textColor="#616161"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <TextView
+        android:id="@+id/btnOption1"
+        android:layout_width="295dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:text="Answer 1"
+
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/btnOption2"
+        android:layout_width="295dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:text="Answer 2"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/btnOption3"
+        android:layout_width="295dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:text="Answer 3"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/whiteRoundedView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/btnOption4"
+        android:layout_width="295dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:text="Answer 4"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <TextView
+        android:id="@+id/btnOption5"
+        android:layout_width="295dp"
+        android:layout_height="39dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:text="Answer 5"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.797" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
