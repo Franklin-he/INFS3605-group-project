@@ -1,6 +1,6 @@
 package com.example.infs3605_group_project.activities;
 
-<<<<<<< HEAD
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-=======
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -19,7 +19,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
->>>>>>> 719dd647c6c0c7af263d84debf4ac009f67b0e70
+
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -30,10 +30,10 @@ import com.example.infs3605_group_project.R;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
-<<<<<<< HEAD
-=======
+
+
 import java.util.Properties;
->>>>>>> 719dd647c6c0c7af263d84debf4ac009f67b0e70
+
 
 public class personalityquiz extends AppCompatActivity {
 
