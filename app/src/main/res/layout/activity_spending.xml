@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2D9D4D"
@@ -10,247 +11,262 @@
 
     <View
         android:id="@+id/whiteRoundedView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
+        android:layout_width="415dp"
+        android:layout_height="712dp"
+        android:layout_marginTop="184dp"
         android:background="@drawable/round_rect_shape"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/total_spendable2"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="603dp"
+        android:layout_width="187dp"
+        android:layout_height="56dp"
         android:ems="10"
+        android:gravity="center_horizontal"
         android:padding="8dp"
         android:text="$0000"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spendable Income"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/whiteRoundedView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_spendable2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="665dp"
-        android:text="My Spendable Income"
+        android:layout_width="408dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="My Spending"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="76dp"
-        android:layout_height="41dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="339dp"
-        android:layout_marginBottom="664dp"
-        android:src="@drawable/back" />
 
     <TextView
         android:id="@+id/textView_spending"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="488dp"
+        android:gravity="center_horizontal"
         android:text="Distribute your income into spendable categories: "
-        android:textColor="?android:attr/colorPrimaryDark"
-        android:textSize="22dp" />
-
-    <EditText
-        android:id="@+id/shopping"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="231dp"
-        android:layout_marginBottom="350dp"
-        android:ems="10"
-        android:inputType="text"
-        android:padding="8dp"
-        android:text="Shopping: "
-        android:textSize="20dp" />
-
-    <EditText
-        android:id="@+id/groceries"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="232dp"
-        android:layout_marginBottom="403dp"
-        android:ems="10"
-        android:inputType="text"
-        android:padding="8dp"
-        android:text="Groceries: "
-        android:textAllCaps="false"
-        android:textSize="20dp" />
-
-    <EditText
-        android:id="@+id/entertainment"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="203dp"
-        android:layout_marginBottom="298dp"
-        android:ems="10"
-        android:inputType="text"
-        android:padding="8dp"
-        android:text="Entertainment: "
-        android:textSize="20dp" />
-
-    <EditText
-        android:id="@+id/utilities"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="231dp"
-        android:layout_marginBottom="246dp"
-        android:ems="10"
-        android:inputType="text"
-        android:padding="8dp"
-        android:text="Utilities: "
-        android:textSize="20dp" />
-
-    <EditText
-        android:id="@+id/transport"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="231dp"
-        android:layout_marginBottom="194dp"
-        android:ems="10"
-        android:inputType="text"
-        android:padding="8dp"
-        android:text="Transport: "
-        android:textSize="20dp" />
-
-    <EditText
-        android:id="@+id/other"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="232dp"
-        android:layout_marginBottom="141dp"
-        android:ems="10"
-        android:inputType="text"
-        android:padding="8dp"
-        android:text="Other: "
-        android:textSize="20dp" />
-
-
-    <EditText
-        android:id="@+id/other_amount"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="144dp"
-        android:ems="10"
-        android:hint="Amount"
-        android:inputType="number"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/shopping_amount"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="353dp"
-        android:ems="10"
-        android:hint="Amount"
-        android:inputType="number"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/entertainment_amount"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="299dp"
-        android:ems="10"
-        android:hint="Amount"
-        android:inputType="number"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/utilities_amount"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="243dp"
-        android:ems="10"
-        android:hint="Amount"
-        android:inputType="number"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/transport_amount"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="54dp"
-        android:layout_marginBottom="195dp"
-        android:ems="10"
-        android:hint="Amount"
-        android:inputType="number"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/groceries_amount"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="403dp"
-        android:ems="10"
-        android:hint="Amount"
-        android:inputType="number"
-        android:padding="8dp" />
+        android:textColor="#565857"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335" />
 
     <Button
         android:id="@+id/spending_next"
-        android:layout_width="104dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:layout_width="132dp"
+        android:layout_height="47dp"
         android:layout_marginStart="158dp"
         android:layout_marginEnd="149dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="32dp"
         android:layout_weight="1"
         android:background="@drawable/rounded_button"
         android:padding="8dp"
         android:text="Next"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/groceries"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="364dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Groceries: "
+        android:textAllCaps="false"
+        android:textColor="#4E4F4F"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/transport"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="156dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Transport: "
+        android:textColor="#4E4F4F"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/utilities_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="204dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/entertainment_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="260dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/shopping_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="316dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/groceries_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="364dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/transport_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="156dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/other_amount"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="104dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Other: "
+        android:textColor="#4E4F4F"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/utilities"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="208dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Utilities: "
+        android:textColor="#4E4F4F"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/entertainment"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="260dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Entertainment: "
+        android:textColor="#4E4F4F"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/shopping"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="312dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="8dp"
+        android:text="Shopping: "
+        android:textColor="#4E4F4F"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
