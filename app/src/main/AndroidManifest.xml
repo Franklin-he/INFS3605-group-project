@@ -11,11 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.StocksDetail"/>
-        <activity android:name=".activities.BondsDetail" />
-        <activity android:name=".activities.EtfDetail" />
-        <activity android:name=".activities.ResultQuiz" />
-        <activity android:name=".activities.personalityquiz" />
+
         <activity android:name=".activities.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +31,11 @@
         <activity android:name=".activities.CreateUser" />
         <activity android:name=".activities.BondsLineChart" />
         <activity android:name=".activities.ETFsLineChart" />
+        <activity android:name=".activities.StocksDetail"/>
+        <activity android:name=".activities.BondsDetail" />
+        <activity android:name=".activities.EtfDetail" />
+        <activity android:name=".activities.ResultQuiz" />
+        <activity android:name=".activities.personalityquiz" />
 
         <meta-data
             android:name="preloaded_fonts"

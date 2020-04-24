@@ -20,7 +20,7 @@ public class StocksDetail extends AppCompatActivity {
         buttonStocks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(StocksDetail.this, Shares.class);
+                Intent intent = new Intent(StocksDetail.this, SectorPerformance.class);
                 StocksDetail.this.startActivity(intent);
             }
         });
