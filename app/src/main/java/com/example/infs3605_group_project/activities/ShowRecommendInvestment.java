@@ -16,6 +16,7 @@ public class ShowRecommendInvestment extends AppCompatActivity {
 
     Button bonds;
     Button etfs;
+    Button shares;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,7 @@ public class ShowRecommendInvestment extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.textView_savings);
         bonds = findViewById(R.id.bonds);
         etfs = findViewById(R.id.funds);
+        shares = findViewById(R.id.shares);
 
         SharedPreferences sharedPreferences = getSharedPreferences("incomes", MODE_PRIVATE);
         Long t_savings = sharedPreferences.getLong("total_savings", 0);
@@ -43,6 +45,15 @@ public class ShowRecommendInvestment extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(ShowRecommendInvestment.this, ETFsLineChart.class);
+                ShowRecommendInvestment.this.startActivity(intent);
+            }
+
+        });
+        shares.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(ShowRecommendInvestment.this, Shares.class);
                 ShowRecommendInvestment.this.startActivity(intent);
             }
 
