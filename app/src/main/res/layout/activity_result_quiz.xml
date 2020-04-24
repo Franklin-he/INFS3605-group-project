@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#64CA77"
+    android:background="#2D9D4D"
     tools:context=".activities.ResultQuiz">
 
     <View
         android:id="@+id/whiteRoundedView"
-        android:layout_width="match_parent"
-        android:layout_height="693dp"
-        android:layout_marginTop="128dp"
+        android:layout_width="413dp"
+        android:layout_height="703dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/whiteroundedbutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,7 +20,7 @@
         android:id="@+id/tvResult"
         android:layout_width="342dp"
         android:layout_height="67dp"
-        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Based on your answers for the risk profile quiz, we have matched you to a suitable investment strategy"
         android:textColor="#00574B"
@@ -36,7 +36,7 @@
         android:id="@+id/tvScore"
         android:layout_width="342dp"
         android:layout_height="53dp"
-        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Score: "
         android:textColor="#00574B"
@@ -50,24 +50,27 @@
 
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/roundedbutton"
-        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="sans-serif"
         android:text="Next"
         android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.947" />
+        app:layout_constraintVertical_bias="0.957" />
+
 
     <TextView
         android:id="@+id/tvOrder"
         android:layout_width="292dp"
         android:layout_height="49dp"
-        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Quiz Results"
         android:textColor="#FFFFFF"
@@ -78,9 +81,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
-
-
+        app:layout_constraintVertical_bias="0.041" />
 
     <ProgressBar
         android:id="@+id/progress_bar"
@@ -102,10 +103,10 @@
         android:id="@+id/tvCompleted"
         android:layout_width="133dp"
         android:layout_height="70dp"
-        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text=" 10/10 Questions"
-        android:textColor="#00574B"
+        android:textColor="#3C643E"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -119,7 +120,7 @@
         android:layout_width="155dp"
         android:layout_height="125dp"
         android:background="#55C264"
-        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:fontFamily="sans-serif"
         android:text="STOCKS"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -135,7 +136,7 @@
         android:id="@+id/tvInvestment"
         android:layout_width="173dp"
         android:layout_height="128dp"
-        android:fontFamily="@font/alegreya_sans_sc_light"
+        android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="We have determined that a high risk, high return strategy is optimal for your investments in Stocks"
         android:textColor="#1E4B3F"

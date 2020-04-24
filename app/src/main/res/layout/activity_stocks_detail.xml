@@ -16,28 +16,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.github.mikephil.charting.charts.LineChart
-        android:id="@+id/line_chart_1"
-        android:layout_width="363dp"
-        android:layout_height="548dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.912">
-
-    </com.github.mikephil.charting.charts.LineChart>
-
     <TextView
         android:id="@+id/textView13"
         android:layout_width="408dp"
         android:layout_height="53dp"
         android:gravity="center"
-        android:text="BONDS Investment Projections"
+        android:text="Stocks Sector Performance"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"

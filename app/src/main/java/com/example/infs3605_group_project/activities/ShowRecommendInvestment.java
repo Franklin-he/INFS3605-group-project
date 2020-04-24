@@ -35,7 +35,7 @@ public class ShowRecommendInvestment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ShowRecommendInvestment.this, BondsLineChart.class);
+                Intent intent = new Intent(ShowRecommendInvestment.this, BondsDetail.class);
                 ShowRecommendInvestment.this.startActivity(intent);
             }
 
@@ -44,7 +44,7 @@ public class ShowRecommendInvestment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ShowRecommendInvestment.this, ETFsLineChart.class);
+                Intent intent = new Intent(ShowRecommendInvestment.this, EtfDetail.class);
                 ShowRecommendInvestment.this.startActivity(intent);
             }
 
@@ -53,7 +53,7 @@ public class ShowRecommendInvestment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ShowRecommendInvestment.this, Shares.class);
+                Intent intent = new Intent(ShowRecommendInvestment.this, StocksDetail.class);
                 ShowRecommendInvestment.this.startActivity(intent);
             }
 
