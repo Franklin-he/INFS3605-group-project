@@ -25,6 +25,7 @@
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.AddSpendingActivity" />
         <activity android:name=".activities.ShowRecommendInvestment" />
+        <activity android:name=".activities.SectorPerformance"/>
         <activity android:name=".activities.GeneralInfo" />
         <activity android:name=".activities.CreateUser" />
         <activity android:name=".activities.BondsLineChart" />

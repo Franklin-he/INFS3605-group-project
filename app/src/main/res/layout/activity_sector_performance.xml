@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SectorPerformance">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="80dp">
+
+        <TextView
+            android:id="@+id/sector_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="14sp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="108dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/itValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="110dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/itView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="110dp"
+            android:text="Information Technology" />
+
+        <TextView
+            android:id="@+id/energyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="140dp"
+            android:text="Energy" />
+
+        <TextView
+            android:id="@+id/energyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="140dp"
+
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/consumValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="260dp"
+
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/consumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="260dp"
+            android:text="Consumer Discretionary" />
+
+        <TextView
+            android:id="@+id/estateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="235dp"
+            android:layout_marginTop="290dp"
+
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/matView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="230dp"
+            android:text="Materials" />
+
+        <TextView
+            android:id="@+id/commView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="200dp"
+            android:text="Communication Services" />
+
+        <TextView
+            android:id="@+id/matValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="230dp"
+
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/utilView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="170dp"
+            android:text="Utilities" />
+
+        <TextView
+            android:id="@+id/utilValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="235dp"
+            android:layout_marginTop="170dp"
+
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/commValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="200dp"
+
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/estateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="290dp"
+            android:text="Real Estate" />
+
+        <TextView
+            android:id="@+id/healthView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="320dp"
+            android:text="Health Care" />
+
+        <TextView
+            android:id="@+id/healthValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="320dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/industrialView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="350dp"
+            android:text="Industrials" />
+
+        <TextView
+            android:id="@+id/industrialValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="350dp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/realbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="400dp"
+            android:layout_marginStart="275dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundedbutton"
+            android:text="Real time" />
+
+        <Button
+            android:id="@+id/day1btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="400dp"
+            android:layout_marginStart="25dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundedbutton"
+            android:text="Day 1" />
+
+        <Button
+            android:id="@+id/day5btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="400dp"
+            android:layout_marginStart="150dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundedbutton"
+            android:text="Day 5" />
+
+        <Button
+            android:id="@+id/month1btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="455dp"
+            android:layout_marginStart="25dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundedbutton"
+            android:text="Month 1" />
+
+        <Button
+            android:id="@+id/month3btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="455dp"
+            android:layout_marginStart="150dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundedbutton"
+            android:text="Month 3" />
+
+        <Button
+            android:id="@+id/ytdbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="455dp"
+            android:layout_marginStart="275dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundedbutton"
+            android:text="Year 1" />
+
+        <Button
+            android:id="@+id/year3btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="510dp"
+            android:layout_marginStart="150dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundedbutton"
+            android:text="Year 3" />
+
+        <Button
+            android:id="@+id/year5btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="510dp"
+            android:layout_marginStart="25dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundedbutton"
+            android:text="Year 5" />
+
+        <Button
+            android:id="@+id/year10btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="275dp"
+            android:layout_marginTop="512dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundedbutton"
+            android:text="Year 10"
+             />
+
+        <Button
+            android:id="@+id/backbtnp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="291dp"
+            android:layout_marginBottom="19dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/roundedbutton"
+            android:text="Back" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
