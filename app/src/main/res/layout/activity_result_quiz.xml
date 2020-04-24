@@ -121,7 +121,6 @@
         android:layout_height="125dp"
         android:background="#55C264"
         android:fontFamily="sans-serif"
-        android:text="STOCKS"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"

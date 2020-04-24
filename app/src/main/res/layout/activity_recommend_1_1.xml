@@ -72,7 +72,7 @@
         android:layout_weight="1"
         android:background="#B9E3BA"
         android:padding="8dp"
-        android:text="STOCKS"
+        android:text="SHARES"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
