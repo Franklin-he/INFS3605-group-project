@@ -2,35 +2,117 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2D9D4D">
 
+
     <View
         android:id="@+id/whiteRoundedView"
         android:layout_width="414dp"
-        android:layout_height="638dp"
-        android:layout_marginTop="132dp"
+        android:layout_height="691dp"
+        android:layout_marginTop="104dp"
         android:background="@drawable/round_rect_shape"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What are Shares?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="368dp"
+        android:layout_height="139dp"
+        android:gravity="center"
+        android:text="This investment type is perfect for those with a high risk tolerance. Purchasing shares in an individual company is only recommended if you understand that company well and are willing to lose the money you put into it. With the right expertise and some luck, shares represent the best way to make a lot of money quick."
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="373dp"
+        android:layout_height="163dp"
+        android:gravity="center"
+        android:text="Like ETFs, shares are traded throughout the day, which means that they can fluctuate substantially. Since shares represent a single company, their volatility depends on the stability of the company. Smaller valued shares often pay less in dividends and are more volatile, which can present you with a lot to win, but also a lot to lose. Since they represent individual companies it is impossible to determine the average returns"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="115dp"
+        android:layout_height="21dp"
+        android:text="Investor Profile"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Risk and Returns"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shares"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/whiteRoundedView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="408dp"
-        android:layout_height="53dp"
+        android:id="@+id/textView15"
+        android:layout_width="369dp"
+        android:layout_height="176dp"
         android:gravity="center"
-        android:text="Stocks Sector Performance"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:text="A share is an investment in a specific company. When you purchase a share, you’re buying a small piece of that company’s earnings and assets. Like an ETF, the purpose of this investment type is to make money from the capital gains of the investment, by selling the shares at a higher price than what you bought them for."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065" />
+        app:layout_constraintVertical_bias="0.243" />
 
     <Button
         android:id="@+id/btnProjections"

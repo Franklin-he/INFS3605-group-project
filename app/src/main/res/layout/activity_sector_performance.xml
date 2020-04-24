@@ -6,210 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".activities.SectorPerformance">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="16dp"
+        android:background="#2D9D4D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="80dp">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-        <TextView
-            android:id="@+id/sector_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:textSize="14sp"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="24dp"
-            android:text="TextView" />
+
+        <View
+            android:id="@+id/whiteRoundedView"
+            android:layout_width="413dp"
+            android:layout_height="681dp"
+            android:layout_marginTop="104dp"
+            android:background="@drawable/round_rect_shape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/date"
-            android:layout_width="wrap_content"
+            android:layout_width="348dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:textSize="12sp"
-            android:layout_marginTop="44dp"
-            android:layout_marginEnd="108dp"
-            android:text="TextView" />
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="29dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/itValue"
-            android:layout_width="wrap_content"
+            android:id="@+id/sector_title"
+            android:layout_width="392dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="236dp"
-            android:layout_marginTop="110dp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/itView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="53dp"
-            android:layout_marginTop="110dp"
-            android:text="Information Technology" />
-
-        <TextView
-            android:id="@+id/energyView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="53dp"
-            android:layout_marginTop="140dp"
-            android:text="Energy" />
-
-        <TextView
-            android:id="@+id/energyValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="236dp"
-            android:layout_marginTop="140dp"
-
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/consumValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="236dp"
-            android:layout_marginTop="260dp"
-
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/consumView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="53dp"
-            android:layout_marginTop="260dp"
-            android:text="Consumer Discretionary" />
-
-        <TextView
-            android:id="@+id/estateValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="235dp"
-            android:layout_marginTop="290dp"
-
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/matView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="53dp"
-            android:layout_marginTop="230dp"
-            android:text="Materials" />
-
-        <TextView
-            android:id="@+id/commView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="53dp"
-            android:layout_marginTop="200dp"
-            android:text="Communication Services" />
-
-        <TextView
-            android:id="@+id/matValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="236dp"
-            android:layout_marginTop="230dp"
-
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/utilView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="53dp"
-            android:layout_marginTop="170dp"
-            android:text="Utilities" />
-
-        <TextView
-            android:id="@+id/utilValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="235dp"
-            android:layout_marginTop="170dp"
-
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/commValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="236dp"
-            android:layout_marginTop="200dp"
-
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/estateView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="53dp"
-            android:layout_marginTop="290dp"
-            android:text="Real Estate" />
-
-        <TextView
-            android:id="@+id/healthView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="53dp"
-            android:layout_marginTop="320dp"
-            android:text="Health Care" />
-
-        <TextView
-            android:id="@+id/healthValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="236dp"
-            android:layout_marginTop="320dp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/industrialView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="53dp"
-            android:layout_marginTop="350dp"
-            android:text="Industrials" />
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="37dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/industrialValue"
@@ -217,105 +63,296 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="236dp"
-            android:layout_marginTop="350dp"
-            android:text="TextView" />
+            android:layout_marginStart="266dp"
+            android:layout_marginTop="376dp"
+            android:text="TextView"
+            android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/realbtn"
+        <TextView
+            android:id="@+id/itValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="400dp"
-            android:layout_marginStart="275dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/roundedbutton"
-            android:text="Real time" />
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="266dp"
+            android:layout_marginTop="136dp"
+            android:text="TextView"
+            android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/day1btn"
+        <TextView
+            android:id="@+id/energyValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="400dp"
-            android:layout_marginStart="25dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/roundedbutton"
-            android:text="Day 1" />
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="266dp"
+            android:layout_marginTop="166dp"
 
-        <Button
-            android:id="@+id/day5btn"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/utilValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="400dp"
-            android:layout_marginStart="150dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/roundedbutton"
-            android:text="Day 5" />
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="265dp"
+            android:layout_marginTop="196dp"
 
-        <Button
-            android:id="@+id/month1btn"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/commValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="455dp"
-            android:layout_marginStart="25dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/roundedbutton"
-            android:text="Month 1" />
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="266dp"
+            android:layout_marginTop="226dp"
 
-        <Button
-            android:id="@+id/month3btn"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/matValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="455dp"
-            android:layout_marginStart="150dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/roundedbutton"
-            android:text="Month 3" />
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="266dp"
+            android:layout_marginTop="256dp"
 
-        <Button
-            android:id="@+id/ytdbtn"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/consumValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="455dp"
-            android:layout_marginStart="275dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/roundedbutton"
-            android:text="Year 1" />
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="266dp"
+            android:layout_marginTop="286dp"
 
-        <Button
-            android:id="@+id/year3btn"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/estateValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="510dp"
-            android:layout_marginStart="150dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/roundedbutton"
-            android:text="Year 3" />
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="265dp"
+            android:layout_marginTop="316dp"
+
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/healthValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="266dp"
+            android:layout_marginTop="346dp"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/itView"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="137dp"
+            android:text="Information Technology"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/industrialView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="377dp"
+            android:text="Industrials"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/healthView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="347dp"
+            android:text="Health Care"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/estateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="317dp"
+            android:text="Real Estate"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/consumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="287dp"
+            android:text="Consumer Discretionary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/matView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="257dp"
+            android:text="Materials"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/commView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="227dp"
+            android:text="Communication Services"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/utilView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="197dp"
+            android:text="Utilities"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/energyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="167dp"
+            android:text="Energy"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/year5btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="510dp"
-            android:layout_marginStart="25dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/roundedbutton"
-            android:text="Year 5" />
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="544dp"
+            android:background="@drawable/rounded_button"
+            android:text="Year 5"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/realbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="283dp"
+            android:layout_marginTop="434dp"
+            android:background="@drawable/rounded_button"
+            android:text="Real time"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/day5btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="434dp"
+            android:background="@drawable/rounded_button"
+            android:text="Day 5"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/day1btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="434dp"
+            android:background="@drawable/rounded_button"
+            android:text="Day 1"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/month1btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="489dp"
+            android:background="@drawable/rounded_button"
+            android:text="Month 1"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/month3btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="489dp"
+            android:background="@drawable/rounded_button"
+            android:text="Month 3"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/ytdbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="283dp"
+            android:layout_marginTop="489dp"
+            android:background="@drawable/rounded_button"
+            android:text="Year 1"
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/year10btn"
@@ -323,24 +360,37 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="275dp"
-            android:layout_marginTop="512dp"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/roundedbutton"
+            android:layout_marginStart="283dp"
+            android:layout_marginTop="546dp"
+            android:background="@drawable/rounded_button"
             android:text="Year 10"
-             />
+            android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/backbtnp"
+            android:id="@+id/year3btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="544dp"
+            android:background="@drawable/rounded_button"
+            android:text="Year 3"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/backbtnp"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="291dp"
-            android:layout_marginBottom="19dp"
+            android:layout_marginStart="139dp"
+            android:layout_marginBottom="39dp"
+            android:background="@drawable/rounded_button"
+            android:text="Back"
             android:textColor="#FFFFFF"
-            android:background="@drawable/roundedbutton"
-            android:text="Back" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
